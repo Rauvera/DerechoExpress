@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Derecho Express | Tu apoyo académico jurídico</title>
+  <title>Derecho Express | Apoyo académico legal</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -19,7 +19,7 @@
       padding: 3rem 1rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     section {
@@ -32,7 +32,7 @@
       margin-bottom: 1rem;
     }
     .card {
-      background-color: #ffffff;
+      background-color: white;
       padding: 1.8rem;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -73,60 +73,106 @@
       border-radius: 8px;
       margin-bottom: 1rem;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Derecho Express</h1>
-    <p>La solución más confiable, rápida y accesible para tus tareas jurídicas</p>
+    <p>La forma inteligente y segura de resolver tus tareas jurídicas</p>
   </header>
 
   <section>
     <div class="card">
-      <img class="image-banner" src="https://images.unsplash.com/photo-1593113595091-4d5743f8a3d4?fit=crop&w=1000&q=80" alt="Imagen legal decorativa">
+      <img class="image-banner" src="https://images.unsplash.com/photo-1555375771-9f56c1a3b4d3?fit=crop&w=1000&q=80" alt="Imagen justicia legal">
       <h2>¿Quiénes somos?</h2>
-      <p>En <strong>Derecho Express</strong> ayudamos a estudiantes que no tienen tiempo de hacer sus tareas, ofreciéndoles entregas rápidas, bien hechas y con explicaciones claras que les ayudan a comprender los temas jurídicos. No solo entregas: también aprendizaje.</p>
-      <p>Con el respaldo de decenas de clientes satisfechos y tarifas estudiantiles desde <strong>$20 pesos</strong>, somos tu mejor aliado académico en Derecho.</p>
+      <p>En <strong>Derecho Express</strong> ayudamos a estudiantes que no tienen tiempo de hacer sus tareas, pero sí desean entregarlas con confianza y aprender. Te damos la solución completa: tarea bien hecha + explicación clara.</p>
+      <p>Contamos con <strong>especialistas en distintas ramas del Derecho</strong>: penal, civil, constitucional, laboral, procesal, administrativo y más. Cada encargo es atendido por alguien que domina el tema.</p>
+      <p>📌 Además, puedes encontrar <strong>referencias y ejemplos de nuestro trabajo</strong> en nuestro Facebook personal: <a href="https://www.facebook.com/jose.vazquez.916889" target="_blank">José Vázquez</a> (foto de perfil animada).</p>
     </div>
 
     <div class="card">
       <h2>¿Qué ofrecemos?</h2>
       <ul>
-        <li>✔ Tareas, ensayos y trabajos académicos personalizados.</li>
-        <li>✔ Resúmenes y análisis de temas legales.</li>
-        <li>✔ Apoyo en exposiciones, proyectos y casos prácticos.</li>
-        <li>✔ Citas legales correctas, normas APA y formato profesional.</li>
-        <li>✔ Contratos, demandas y documentos con fines escolares.</li>
-        <li>✔ Guías explicativas para que no solo entregues: también aprendas.</li>
+        <li>✔ Tareas, ensayos, cuadros comparativos, resúmenes y análisis legales.</li>
+        <li>✔ Casos prácticos, demandas, contratos y más para fines académicos.</li>
+        <li>✔ Cumplimiento estricto con normas APA y formato legal.</li>
+        <li>✔ Guías explicativas incluidas: no solo entregas, también aprendes.</li>
+        <li>✔ Servicio personalizado y confidencial.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>¿Por qué elegirnos?</h2>
+      <h2>¿Por qué contratarnos?</h2>
       <ul>
-        <li>💼 Profesionalismo, seriedad y cumplimiento garantizado.</li>
-        <li>💸 Precios bajos desde $20 pesos, sin letras chiquitas.</li>
-        <li>📩 Atención personalizada por WhatsApp.</li>
-        <li>⏱️ Entregas urgentes en el mismo día, si lo necesitas.</li>
-        <li>🧠 Explicaciones incluidas: aprende y entrega con seguridad.</li>
+        <li>💸 Precios desde $20 pesos. Pensado para estudiantes.</li>
+        <li>📈 Calidad garantizada. Nada se entrega sin revisar.</li>
+        <li>⏱️ Entregas urgentes. ¿Para hoy? ¡También podemos ayudarte!</li>
+        <li>💬 Explicaciones claras. Porque entendemos que no solo quieres pasar, sino comprender.</li>
+        <li>📲 Atención inmediata por WhatsApp.</li>
       </ul>
-      <p>Con <strong>Derecho Express</strong>, no solo cumples... ¡destacas!</p>
+      <p>🎯 Cada tarea es única. La hacemos desde cero y te ayudamos a entenderla.</p>
     </div>
 
     <div class="card">
-      <h2>Contáctanos</h2>
-      <p>¿Tienes una tarea pendiente? Cotiza en minutos y resuélvelo sin estrés:</p>
+      <h2>📬 Buzón de contacto</h2>
+      <p>¿Quieres que te contactemos? Déjanos tu mensaje y cómo prefieres que te respondamos:</p>
+      <form onsubmit="enviarMensaje(); return false;">
+        <label for="mensaje">¿Qué tarea necesitas?</label>
+        <textarea id="mensaje" rows="5" placeholder="Ejemplo: Necesito un ensayo de Derecho Penal de 3 cuartillas sobre delitos dolosos..."></textarea>
+
+        <label for="contacto">¿Dónde podemos contactarte? (WhatsApp, correo, etc.)</label>
+        <input id="contacto" type="text" placeholder="Ejemplo: 5561234567 / micorreo@gmail.com" />
+
+        <button type="submit">Enviar mensaje por WhatsApp</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Contáctanos directamente</h2>
       <div class="contact-links">
         <a class="whatsapp" href="https://wa.me/5215565189385" target="_blank">💬 WhatsApp: 5565189385</a>
-        <a class="facebook" href="https://www.facebook.com/profile.php?id=100094337872499" target="_blank">📘 Facebook: José Vázquez</a>
+        <a class="facebook" href="https://www.facebook.com/jose.vazquez.916889" target="_blank">📘 Facebook: José Vázquez</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Derecho Express | Hecho para estudiantes, pensado para ganar tiempo</p>
+    <p>&copy; 2025 Derecho Express | Entrega, aprendizaje y confianza en cada tarea</p>
   </footer>
+
+  <script>
+    function enviarMensaje() {
+      const mensaje = document.getElementById('mensaje').value.trim();
+      const contacto = document.getElementById('contacto').value.trim();
+      if (!mensaje || !contacto) {
+        alert("Por favor, llena ambos campos antes de enviar.");
+        return;
+      }
+      const texto = `Hola, me gustaría solicitar una tarea:\n\n${mensaje}\n\nPuedes contactarme por: ${contacto}`;
+      const url = "https://wa.me/5215565189385?text=" + encodeURIComponent(texto);
+      window.open(url, '_blank');
+    }
+  </script>
 
 </body>
 </html>
